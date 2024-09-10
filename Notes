@@ -1,4 +1,14 @@
-TCP - Transmission Control Protocol
+OSI (Open Systems Interconnection) Model
+Layer 1: Physical Layer
+Layer 2: Data Link Layer
+Layer 3: Network Layer
+Layer 4: Transport Layer
+Layer 5: Session Layer
+Layer 6: Presentation Layer
+Layer 7: Application Layer
+
+
+TCP - Transmission Control Protocol, Layer 4 OSI Model (Transport Layer)
 Breaks up large messages into something called packets. A packet is a segment of data that, when combined with other packets, make up one whole message. Things like websites are broken into packets, then sent over the Internet.
 The receiving computer reassembles the packets back into the whole message. Breaking it up into packets makes it so that the data is easier to transfer through the Internet. Some packets can get to the destination first, while if the 
 message was being sent as a whole, it will have to wait a long time for the message to come.
@@ -12,7 +22,7 @@ back in order. Another concept is called checksums. Checksums is a little piece 
 used, so the sending computer has to send the packet again. ACKs and NACKs are useful because they allow communication in the opposite direction. Finally, the sending computer will resend a packet if it has not receiving an ACK or NACK after some time for that specific
 packet. This is called a timeout. Sometimes, ACKs can actually get lost too, but TCP ignores duplicates.
 
-UDP - User Datagram Protocol
+UDP - User Datagram Protocol, Layer 4 OSI Model (Transport Layer)
 This is similar to TCP, however this protocol does not guarantee delivery. UDP does not do anything for duplicate packets, lost packets, or out of order packets. All it does is it gets the bulk of the data to one place. Checksums are still used to make sure the data is
 not corrupted. The packets of data still have formal packet structure, as it includes destination, origin, and packet size. UDP is usually used for "unimportant" data transfer, such as music, video, and VOIP. For example, sometimes video calls on Skype can suddenly become
 very poor quality, and that is because UDP has lost some packets in the transfer process. However, the bulk of the data has been transferred successfully, so the user can still see the overall picture and the conversation can function fine.
