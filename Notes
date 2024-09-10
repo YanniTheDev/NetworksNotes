@@ -1,12 +1,24 @@
 OSI (Open Systems Interconnection) Model
 Layer 1: Physical Layer
-Layer 2: Data Link Layer
-Layer 3: Network Layer
-Layer 4: Transport Layer
-Layer 5: Session Layer
-Layer 6: Presentation Layer
-Layer 7: Application Layer
+Protocols: Ethernet, Bluetooth
 
+Layer 2: Data Link Layer
+Protocols: MAC
+
+Layer 3: Network Layer
+Protocols: IP, ARP (converts MAC address to IP address)
+
+Layer 4: Transport Layer
+Protocols: UDP, TCP
+
+Layer 5: Session Layer
+Protocols: NetBIOS
+
+Layer 6: Presentation Layer
+Protocols: TLS, SSL, FTP
+
+Layer 7: Application Layer
+Protocols: HTTP, FTP, DNS
 
 
 HyperText Transfer Protocol (HTTP) - Application Layer (7)
@@ -51,3 +63,7 @@ User Datagram Protocol (UDP) - Transport Layer 4
 This is similar to TCP, however this protocol does not guarantee delivery. UDP does not do anything for duplicate packets, lost packets, or out of order packets. All it does is it gets the bulk of the data to one place. Checksums are still used to make sure the data is
 not corrupted. The packets of data still have formal packet structure, as it includes destination, origin, and packet size. UDP is usually used for "unimportant" data transfer, such as music, video, and VOIP. For example, sometimes video calls on Skype can suddenly become
 very poor quality, and that is because UDP has lost some packets in the transfer process. However, the bulk of the data has been transferred successfully, so the user can still see the overall picture and the conversation can function fine.
+
+The Internet is made of layers. At each layer, data is made up of the previous layer's whole unit of data, and then headers are added and passed down. At the Link layer, a footer is also added. Footers and headers are meta-data (fancy word for data that describes other data). Headers come before the data, and the footer come afterwards.
+
+For a UDP packet layer, on the application layer, there is only the data. Once it is on the transport layer, there is the UDP header, and UDP data. Then, on the Network layer there will be a packet header, and the packet data composed of the UDP data and the Application layer data. Finally, the Link layer will have a frame header, frame data, and frame footer. A message sent in HTTP will be received on the Transport layer, wrapped in a TCP/UDP header, then wrapped in an IPv6/IPv4 header, then an Ethernet header and footer, and then sent over the Internet. The computer receiving the data will do all of this in reverse. TCP and UDP packets have a number saying how big they are. This number means that the packet can be as big as you like.
