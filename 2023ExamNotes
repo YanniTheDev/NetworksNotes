@@ -1,0 +1,21 @@
+Internet Protocol Suite:
+The Internet Protocol (IP) suite is a fundamental framework for computer networking. It is a model that defines how data is transferred over networks, ensuring reliable communications between devices, plus some security features. The IP suite model has 4 abstraction layers: Link, Internet, Transport, and Application. Each layer has a specific function that manages a different aspect of the process behind network communication.
+- Link Layer:
+  The Link layer is a group of applications requiring network communications. This layer is responsible for generating the data and requesting connections. It acts on behalf of the sender and the Link layer.
+- Internet Layer:
+  This layer defines the protocols that are responsible for the transmission of data packets over the entire network. The main protocols on this layer are:
+    > IP: Which stands for Internet Protocol, and is responsible for delivering data from source host to the destination host by looking at the IP addresses in the packet headers.
+    > ICMP: ICMP stands for Internet Control Message Protocol. It is encapsulated within the IP datagrams and is responsible for providing hosts with information about network problems.
+    > ARP: Address Resolution Protocol. Its job is to find the MAC address of a known IP address.
+  The Internet layer is responsible for routing packets of data from one device to another across a network. It does this by assigning each device an unique IP address, which is used to identify the device      and determine the route the packet should take to reach it.
+- Transport Layer:
+  This layer exchanges data receipt acknowledgements and retransmit missing packets to ensure that packets arrive in order and without error. TCP (Transmission Control Protocol) and UDP (User Datagram           Protocol) are the transport layer protocols.
+    > TCP: Applications can interact with one another using TCP as though they were physically connected by a circuit. TCP transmits data in a way that resembles character-to-character transmission rather                than whole packets. A starting point that establishes the connection, the whole transmission in byte order, and an ending point that closes the connection make up this connection.
+    > UDP: The datagram delivery service is provided by UDP. Connections between hosts are not verified by UDP. Applications that send little data use UDP rather than TCP because it eliminates the process of             establishing and validating connections, which can make UDP quicker.
+- Application Layer:
+  This layer is responsible for end-to-end communication and error-free delivery of data. The main protocols in this layer are:
+    > HTTP: HyperText Transfer Protocol. Used by WWW to manage communications between web browsers and servers.
+    > SSH: Secure Shell. It is a terminal emulations software similar to Telnet. The reason SSH is preferred is because of its ability to maintain the encrypted connection. It sets up a secure session.
+
+TCP handshake:
+  
