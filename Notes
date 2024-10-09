@@ -2,7 +2,7 @@ OSI (Open Systems Interconnection) Model - It is a conceptual model that represe
 Layer 1: Physical Layer
 Protocols: Ethernet, Bluetooth
 
-Layer 2: Data Link Layer
+Layer 2: Data Link Layer - This layer is responsible for the node-to-node delivery of data. Each computer or device in a network is called a "node". Its major role is to ensure error-free transmission of information. This layer introduces the hardware parts of the network too, such as the MAC address. This layer is also responsible for encoding, decoding, and organizing the outgoing and incoming data.
 Protocols: MAC
 
 Layer 3: Network Layer - The main function of this layer is to transfer packets of data from the source to the destination. It involves bost the source host and the destination host. The network layer provides the services, packetizing, routing, and forwarding. Packetizing involves encapuslating data into packets suitable for transmission. Routing determines the optimal path in the network the packet should take for the journey to be efficient. Finally, forwarding is the process of directing these packets to their next destination in the network.
