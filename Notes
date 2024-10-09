@@ -1,4 +1,4 @@
-OSI (Open Systems Interconnection) Model
+OSI (Open Systems Interconnection) Model - It is a conceptual model that represents how a network communicates. Because network communication is complex, the model is comprised of seven layers, each with a different task.
 Layer 1: Physical Layer
 Protocols: Ethernet, Bluetooth
 
