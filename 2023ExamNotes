@@ -22,3 +22,11 @@ TCP handshake:
     > SYN (SYNchronize): The initiating computer sends a synchronized sequence number packet to the receiving computer with a value set to an arbitrary number to "ask" if there is any connections open.
     > SYN-ACK (SYNchronize-ACKnowledgement): If the receiving computer does have an open connection, it sends back a SYN-ACK (acknowledging the synchronize) packet to the initiating computer.
     > ACK (ACKnowledgement): The initiating computer then sends an acknowledgment sequence number packet back to the receiving computer, acknowledging the receipt of the SYN-ACK packet. With this final            step, the connection is established and the data transmission can begin.
+
+2 HTTP Protocols:
+  GET request, which asks for data from the server based on client input: A user types "https://www.example.com" into their web browser to access the homepage of the website.
+  Process:
+    > The browser generates a GET request for the resource at the given URL. This request is sent to the server hosting that website. The server process the GET request and looks for the requested resource        (such as a HTML file, image, or CSS file). If the resource is found, the server responds with a HTTP response status code (200 OK), or if the resource is not found it will respond with a different           status code (404 Not Found). The browser will then interpret the HTML, render it, and display on the screen.
+  POST request, which sends something to the server. For example, an user filling out a login form, which submits their username and password.
+  Process:
+    > The browser generates a POST request with the login form data (username, email, password, etc). This POST request is sent to the web server at a specified URL (for example, /login). The server               receives the POST request, extracts the data from the body, and processes it (checking if the password supplied with the username matches with what is in the web server). If it matches, HTTP response        code status of 200 OK, if not 403 Forbidden along with an error message. The browser will then render new HTML if it is unsuccessful (403 Forbidden) telling the user the password/username is wrong, or       if it was successful, redirects the user to a new page.
