@@ -8,7 +8,7 @@ Protocols: MAC
 Layer 3: Network Layer
 Protocols: IP, ARP (converts MAC address to IP address)
 
-Layer 4: Transport Layer
+Layer 4: Transport Layer - It is an end-to-end layer used to deliver messages to a host. The Transport layer works a bit differently depending on whether the user is receiving or sending. If the user is sending, the transport layer receives message from the Application layer, and performs segmentation, which is basically dividing the message up into segments. Then the Transport layer adds the source and destination's port numbers into the header of the segment, and then passes it to the Network layer. If the user is receiving, the transport layer reassembles the message, reads the header and port number, and forwards the message to that port on the Application layer.
 Protocols: UDP, TCP
 
 Layer 5: Session Layer - This layer allows users on different machines to establish active communications with each other. The main responsibility of the session layer is to establish, maintain, synchronize, and terminate sessions between end-to-end user applications.
