@@ -11,7 +11,7 @@ Protocols: IP, ARP (converts MAC address to IP address)
 Layer 4: Transport Layer
 Protocols: UDP, TCP
 
-Layer 5: Session Layer
+Layer 5: Session Layer - This layer allows users on different machines to establish active communications with each other. The main responsibility of the session layer is to establish, maintain, synchronize, and terminate sessions between end-to-end user applications.
 Protocols: NetBIOS
 
 Layer 6: Presentation Layer - This layer serves as a data translator for the network. The data which this layer receives from the Application layer is extracted and then manipulated to the required format to transmit over the network. The main responsibility of this layer is to define the data format and encryption. It also maintains the proper syntax of the data that is being transferred.
