@@ -14,10 +14,10 @@ Protocols: UDP, TCP
 Layer 5: Session Layer
 Protocols: NetBIOS
 
-Layer 6: Presentation Layer
+Layer 6: Presentation Layer - This layer serves as a data translator for the network. The data which this layer receives from the Application layer is extracted and then manipulated to the required format to transmit over the network. The main responsibility of this layer is to define the data format and encryption. It also maintains the proper syntax of the data that is being transferred.
 Protocols: TLS, SSL, FTP
 
-Layer 7: Application Layer
+Layer 7: Application Layer - The application layer provides the functionality to send and receive data from users. It acts like an interface between the user and the application. The application provides services such as file transmission, mail service, and other services provided by the application layer.
 Protocols: HTTP, FTP, DNS
 
 
