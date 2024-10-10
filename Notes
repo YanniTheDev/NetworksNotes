@@ -32,11 +32,9 @@ HEAD request - returns information about what you will get if you did a GET requ
 POST request - allows clients to send information in the other direction. Clients can replace a resource or data on the server with something they supply with the request. These use something that is called a Uniform Resource Identifier or URI. URI is a unique code or numbe for a resource.
 PUT request - similar to POST request. However, if the resource already exists with the same URI, it is modified with the new one.
 DELETE request - deletes a resource.
-CONNECT request - starts a two-way communications with the requested resource. It can be used to open a tunnel. For example, the CONNECT method can be used to access websites that use TLS. The client asks an HTTP Proxy server to tunnel the TCP connection to the desired 
-connection. The proxy server then proceeds to make the connection on behalf of the client. Once the connection is established, the proxy server continues to relay the TCP stream to and from the client.
-PATCH request - allows the client to do a partial modification of a resource.
-The first line of a response is the status line and has a numeric status code such as 404 and text-based reason phrase such as "Not Found". The most common is 200 and this means successful or "OK". The status codes are primarily divided into five groups for better 
-explanation of requests, and responses between client and server are named by purpose and a number: Informational 1XX, Successful 2XX, Redirection 3XX, Client Error 4XX, and Server Error 5XX. 
+CONNECT request - starts a two-way communications with the requested resource. It can be used to open a tunnel. For example, the CONNECT method can be used to access websites that use TLS. The client asks an HTTP Proxy server to tunnel the TCP connection to the desired connection. The proxy server then proceeds to make the connection on behalf of the client. Once the connection is established, the proxy server continues to relay the TCP stream to and from the client.
+PATCH request - allows the client to do a partial modification of a resource. 
+The first line of a response is the status line and has a numeric status code such as 404 and text-based reason phrase such as "Not Found". The most common is 200 and this means successful or "OK". The status codes are primarily divided into five groups for better explanation of requests, and responses between client and server are named by purpose and a number: Informational 1XX, Successful 2XX, Redirection 3XX, Client Error 4XX, and Server Error 5XX. 
 
 Internet Chat Relay (IRC) - Application Layer (7)
 It is a system that lets you transfer messages in the form of text. It is essentially a chat protocol. It uses a client-server model. Clients are chat programs installed on a user's computer that connects to a central server. The clients communicate the message to the central 
