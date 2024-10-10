@@ -27,7 +27,7 @@ Transfer HyperText, such as HTML, from a server to the client's computer.
 It functions as a simple conversation between the client and the server. Uses a request/reponse pattern for solving the problem of reliable communication between the client and the server. 
 Requests and responses can have other data or resources sent along with it, such as an user ID.
 Nine types of requests:
-GET request - returns what you asked for. Such as a piece an HTML element
+GET request - returns what you asked for. Such as a piece of an HTML element or an image file.
 HEAD request - returns information about what you will get if you did a GET request. For example, a GET request on a file download will download the file, but a HEAD request will be able to tell the client how big the file is.
 POST request - allows clients to send information in the other direction. Clients can replace a resource or data on the server with something they supply with the request. These use something that is called a Uniform Resource Identifier or URI. 
 URI is a unique code or numbe for a resource.
