@@ -33,3 +33,5 @@ TCP handshake:
 
 IoT and NCP:
   Network Control Protocols are critical for managing and controlling communication in the IoT. IoT consists of many devices that communicate with each         other, often using a variety of protocols to ensure efficient, secure, and reliable data transfer. NCP (Network Control Protocols) provide those necessary    mechanisms to manage these communications, ensuring that data flows correctly and devices interact effectively.
+
+I hate this damn external.
