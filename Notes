@@ -60,3 +60,5 @@ The Ethernet protocol stack uses four layers of the OSI model, and also uses the
     > Links together Ethernet devices. At this point, all they can do is move an Ethernet frame one device to another. PCS (Physical Coding Sublayer) protocol is responsible for coding data ready for              transmission, or decoding data received. Either receives a frame from the next layer or sends one to it.
  - Network Layer:
     > This layer manages moving the packets of data through an Ethernet network. The layer can also handle error handling, network congestion, and packet sequencing. The MAC (Medium Access Control) protocol       is responsible for assembling the Ethernet packet. Two components of this packet is the address of the receiver, and the address of the sender.
+ - Transport Layer:
+    > Manages the connection between the Ethernet devices. LLC (Logical Link Control) protocol manages the data transmissions and ensures the integrity of data transmissions. However, because Ethernet is a        connectionless protocol, it has no responsibility for checking that a transmission has been successfully been delivered.
