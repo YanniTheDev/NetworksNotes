@@ -52,3 +52,7 @@ This is similar to TCP, however this protocol does not guarantee delivery. UDP d
 The Internet is made of layers. At each layer, data is made up of the previous layer's whole unit of data, and then headers are added and passed down. At the Link layer, a footer is also added. Footers and headers are meta-data (fancy word for data that describes other data). Headers come before the data, and the footer come afterwards.
 
 For a UDP packet layer, on the application layer, there is only the data. Once it is on the transport layer, there is the UDP header, and UDP data. Then, on the Network layer there will be a packet header, and the packet data composed of the UDP data and the Application layer data. Finally, the Link layer will have a frame header, frame data, and frame footer. A message sent in HTTP will be received on the Transport layer, wrapped in a TCP/UDP header, then wrapped in an IPv6/IPv4 header, then an Ethernet header and footer, and then sent over the Internet. The computer receiving the data will do all of this in reverse. TCP and UDP packets have a number saying how big they are. This number means that the packet can be as big as you like.
+
+The Ethernet protocol stack uses four layers of the OSI model, and also uses the basis of the TCP/IP stack. The four layers are:
+ - Physical Layer:
+    > This is the same as the Physical layer on the OSI model. Raw data, electric signals, bits, etc. along a wire. All the elements required to serially transmit bits over a communication medium like a           wire.
