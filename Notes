@@ -55,4 +55,6 @@ For a UDP packet layer, on the application layer, there is only the data. Once i
 
 The Ethernet protocol stack uses four layers of the OSI model, and also uses the basis of the TCP/IP stack. The four layers are:
  - Physical Layer:
-    > This is the same as the Physical layer on the OSI model. Raw data, electric signals, bits, etc. along a wire. All the elements required to serially transmit bits over a communication medium like a           wire.
+    > This is the same as the Physical layer on the OSI model. Raw data, electric signals, bits, etc. along a wire. All the elements required to serially transmit bits over a communication medium like a           wire. PMA (Physical Medium Attachment) protocol is responsible for signal transmitting and receiving.
+ - Data Link Layer:
+    > Links together Ethernet devices. At this point, all they can do is move an Ethernet frame one device to another. PCS (Physical Coding Sublayer) protocol is responsible for coding data ready for              transmission, or decoding data received. Either receives a frame from the next layer or sends one to it.
