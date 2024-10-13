@@ -9,7 +9,7 @@ The Internet Protocol (IP) suite is a fundamental framework for computer network
     > ARP: Address Resolution Protocol. Its job is to find the MAC address of a known IP address.
 - The Internet layer is responsible for routing packets of data from one device to another across a network. It does this by assigning each device an unique IP address, which is used to identify the device and determine the route the packet should take to reach it.
 - Transport Layer:
-  This layer exchanges data receipt acknowledgements and retransmit missing packets to ensure that packets arrive in order and without error. TCP (Transmission Control Protocol) and UDP (User Datagram Protocol) are the transport layer protocols.
+  This layer exchanges data receipt acknowledgements and re-transmits missing packets to ensure that packets arrive in order and without error. TCP (Transmission Control Protocol) and UDP (User Datagram Protocol) are the transport layer protocols.
     > TCP: Applications can interact with one another using TCP as though they were physically connected by a circuit. TCP transmits data in a way that resembles character-to-character transmission rather than whole packets. A starting point that establishes the connection, the whole transmission in byte order, and an ending point that closes the connection make up this connection.
     > UDP: The datagram delivery service is provided by UDP. Connections between hosts are not verified by UDP. Applications that send little data use UDP rather than TCP because it eliminates the process of establishing and validating connections, which can make UDP quicker.
 - Application Layer:
