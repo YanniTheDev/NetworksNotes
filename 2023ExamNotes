@@ -19,7 +19,7 @@ The Internet Protocol (IP) suite is a fundamental framework for computer network
 
 TCP handshake:
   TCP uses a three-way handshake to set up a TCP/IP connection over an IP based network. It is used to establish a reliable connection, and ensures that both   parties are synchronized and ready for to communicate. During the TCP handshake, three messages are transmitted by TCP to negotiate and start a TCP session. Those three messages are: SYN, SYN-ACK, and ACK.
-    > SYN (SYNchronize): The initiating computer sends a synchronized sequence number packet to the receiving computer with a value set to an arbitrary number to "ask" if there is any connections open.
+    > SYN (SYNchronize): The initiating computer sends a synchronized sequence number packet to the receiving computer with the value set to an arbitrary number to "ask" if there is any connections open.
     > SYN-ACK (SYNchronize-ACKnowledgement): If the receiving computer does have an open connection, it sends back a SYN-ACK (acknowledging the synchronize) packet to the initiating computer.
     > ACK (ACKnowledgement): The initiating computer then sends an acknowledgment sequence number packet back to the receiving computer, acknowledging the receipt of the SYN-ACK packet. With this final step, the connection is established and the data transmission can begin.
 
