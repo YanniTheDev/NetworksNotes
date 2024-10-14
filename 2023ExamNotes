@@ -32,6 +32,6 @@ TCP handshake:
     > The browser generates a POST request with the login form data (username, email, password, etc). This POST request is sent to the web server at a specified URL (for example, /login). The server receives the POST request, extracts the data from the body, and processes it (checking if the password supplied with the username matches with what is in the web server). If it matches, HTTP response code status of 200 OK, if not 403 Forbidden along with an error message. The browser will then render new HTML if it is unsuccessful (403 Forbidden) telling the user the password/username is wrong, or if it was successful, redirects the user to a new page.
 
 IoT and NCP:
-  Network Control Protocols are critical for managing and controlling communication in the IoT. IoT consists of many devices that communicate with each         other, often using a variety of protocols to ensure efficient, secure, and reliable data transfer. NCP (Network Control Protocols) provide those necessary    mechanisms to manage these communications, ensuring that data flows correctly and devices interact effectively.
+  Network Control Protocols are critical for managing and controlling communication in the IoT. IoT consists of many devices that communicate with each other, often using a variety of protocols to ensure efficient, secure, and reliable data transfer. NCP (Network Control Protocols) provide those necessary mechanisms to manage these communications, ensuring that data flows correctly and devices interact effectively.
 
 I hate this damn external.
